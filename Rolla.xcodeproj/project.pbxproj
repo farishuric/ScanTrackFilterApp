@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AF4E400D2AADC4810061ED8F /* RollaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E400C2AADC4810061ED8F /* RollaApp.swift */; };
-		AF4E400F2AADC4810061ED8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E400E2AADC4810061ED8F /* ContentView.swift */; };
 		AF4E40112AADC4820061ED8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4E40102AADC4820061ED8F /* Assets.xcassets */; };
 		AF4E40142AADC4820061ED8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4E40132AADC4820061ED8F /* Preview Assets.xcassets */; };
 		AF4E40232AADC91E0061ED8F /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E40222AADC91E0061ED8F /* ScanView.swift */; };
@@ -19,12 +18,20 @@
 		AF4E40312AADCB1F0061ED8F /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E40302AADCB1F0061ED8F /* BluetoothManager.swift */; };
 		AF4E40342AADCDCD0061ED8F /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E40332AADCDCD0061ED8F /* Spacer.swift */; };
 		AF4E40372AADD2380061ED8F /* GPSTrackerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E40362AADD2380061ED8F /* GPSTrackerManager.swift */; };
+		AF4E403A2AADD7E70061ED8F /* gps-tracker.json in Resources */ = {isa = PBXBuildFile; fileRef = AF4E40392AADD7E70061ED8F /* gps-tracker.json */; };
+		AF4E403E2AADD8000061ED8F /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E403D2AADD8000061ED8F /* LottieView.swift */; };
+		AF4E40402AADDBA20061ED8F /* bluetooth-lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = AF4E403F2AADDBA20061ED8F /* bluetooth-lottie.json */; };
+		AF4E40462AADDE560061ED8F /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E40452AADDE560061ED8F /* Double+Extensions.swift */; };
+		AF4E40492AADDE840061ED8F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E40482AADDE840061ED8F /* String+Extensions.swift */; };
+		AFFDDBC95BB98B759B367696 /* Pods_Rolla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9029A6E265F2C185B6214689 /* Pods_Rolla.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		088DFCB42736DD48884ED698 /* Pods-Rolla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rolla.release.xcconfig"; path = "Target Support Files/Pods-Rolla/Pods-Rolla.release.xcconfig"; sourceTree = "<group>"; };
+		241359E39F93EF916CADCE60 /* Pods-Rolla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rolla.debug.xcconfig"; path = "Target Support Files/Pods-Rolla/Pods-Rolla.debug.xcconfig"; sourceTree = "<group>"; };
+		9029A6E265F2C185B6214689 /* Pods_Rolla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rolla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4E40092AADC4810061ED8F /* Rolla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rolla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4E400C2AADC4810061ED8F /* RollaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollaApp.swift; sourceTree = "<group>"; };
-		AF4E400E2AADC4810061ED8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF4E40102AADC4820061ED8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF4E40132AADC4820061ED8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF4E40222AADC91E0061ED8F /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
@@ -35,6 +42,11 @@
 		AF4E40302AADCB1F0061ED8F /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		AF4E40332AADCDCD0061ED8F /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
 		AF4E40362AADD2380061ED8F /* GPSTrackerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSTrackerManager.swift; sourceTree = "<group>"; };
+		AF4E40392AADD7E70061ED8F /* gps-tracker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gps-tracker.json"; sourceTree = "<group>"; };
+		AF4E403D2AADD8000061ED8F /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		AF4E403F2AADDBA20061ED8F /* bluetooth-lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "bluetooth-lottie.json"; sourceTree = "<group>"; };
+		AF4E40452AADDE560061ED8F /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		AF4E40482AADDE840061ED8F /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +54,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFDDBC95BB98B759B367696 /* Pods_Rolla.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B0C3496688ADD74D285D661 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				241359E39F93EF916CADCE60 /* Pods-Rolla.debug.xcconfig */,
+				088DFCB42736DD48884ED698 /* Pods-Rolla.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AF4E40002AADC4810061ED8F = {
 			isa = PBXGroup;
 			children = (
 				AF4E400B2AADC4810061ED8F /* Rolla */,
 				AF4E400A2AADC4810061ED8F /* Products */,
+				0B0C3496688ADD74D285D661 /* Pods */,
+				CF9C17BB724C5141C6805D9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,7 +94,6 @@
 				AF4E401E2AADC5590061ED8F /* Common */,
 				AF4E401A2AADC52F0061ED8F /* Modules */,
 				AF4E400C2AADC4810061ED8F /* RollaApp.swift */,
-				AF4E400E2AADC4810061ED8F /* ContentView.swift */,
 				AF4E40102AADC4820061ED8F /* Assets.xcassets */,
 				AF4E40122AADC4820061ED8F /* Preview Content */,
 			);
@@ -123,6 +146,8 @@
 		AF4E401E2AADC5590061ED8F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AF4E40442AADDE4D0061ED8F /* Extensions */,
+				AF4E40382AADD7D60061ED8F /* Resources */,
 				AF4E40352AADD21E0061ED8F /* Location */,
 				AF4E40322AADCDC90061ED8F /* UIHelpers */,
 				AF4E402D2AADCA790061ED8F /* Views */,
@@ -151,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				AF4E402E2AADCA800061ED8F /* PrimaryButton.swift */,
+				AF4E403D2AADD8000061ED8F /* LottieView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +197,32 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
+		AF4E40382AADD7D60061ED8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E403F2AADDBA20061ED8F /* bluetooth-lottie.json */,
+				AF4E40392AADD7E70061ED8F /* gps-tracker.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF4E40442AADDE4D0061ED8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E40452AADDE560061ED8F /* Double+Extensions.swift */,
+				AF4E40482AADDE840061ED8F /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF9C17BB724C5141C6805D9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9029A6E265F2C185B6214689 /* Pods_Rolla.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF4E40172AADC4820061ED8F /* Build configuration list for PBXNativeTarget "Rolla" */;
 			buildPhases = (
+				7F00AA014C9EDA1C9279CA5E /* [CP] Check Pods Manifest.lock */,
 				AF4E40052AADC4810061ED8F /* Sources */,
 				AF4E40062AADC4810061ED8F /* Frameworks */,
 				AF4E40072AADC4810061ED8F /* Resources */,
+				E909BFE1C6F87DEC6F1B8FA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,26 +284,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4E40142AADC4820061ED8F /* Preview Assets.xcassets in Resources */,
+				AF4E40402AADDBA20061ED8F /* bluetooth-lottie.json in Resources */,
+				AF4E403A2AADD7E70061ED8F /* gps-tracker.json in Resources */,
 				AF4E40112AADC4820061ED8F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F00AA014C9EDA1C9279CA5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rolla-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E909BFE1C6F87DEC6F1B8FA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rolla/Pods-Rolla-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rolla/Pods-Rolla-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rolla/Pods-Rolla-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF4E40052AADC4810061ED8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF4E400F2AADC4810061ED8F /* ContentView.swift in Sources */,
 				AF4E40282AADC93D0061ED8F /* MainView.swift in Sources */,
 				AF4E40312AADCB1F0061ED8F /* BluetoothManager.swift in Sources */,
 				AF4E40372AADD2380061ED8F /* GPSTrackerManager.swift in Sources */,
 				AF4E402A2AADC98F0061ED8F /* TrackView.swift in Sources */,
+				AF4E40492AADDE840061ED8F /* String+Extensions.swift in Sources */,
 				AF4E40342AADCDCD0061ED8F /* Spacer.swift in Sources */,
 				AF4E400D2AADC4810061ED8F /* RollaApp.swift in Sources */,
 				AF4E402F2AADCA800061ED8F /* PrimaryButton.swift in Sources */,
+				AF4E403E2AADD8000061ED8F /* LottieView.swift in Sources */,
 				AF4E402C2AADC99A0061ED8F /* FilterView.swift in Sources */,
+				AF4E40462AADDE560061ED8F /* Double+Extensions.swift in Sources */,
 				AF4E40232AADC91E0061ED8F /* ScanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +473,7 @@
 		};
 		AF4E40182AADC4820061ED8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241359E39F93EF916CADCE60 /* Pods-Rolla.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,7 +483,8 @@
 				DEVELOPMENT_TEAM = R8GJC85857;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Bluetooth access to connect to nearby devices.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Location access is needed to provide you with location-based services.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -403,6 +505,7 @@
 		};
 		AF4E40192AADC4820061ED8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088DFCB42736DD48884ED698 /* Pods-Rolla.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -412,7 +515,8 @@
 				DEVELOPMENT_TEAM = R8GJC85857;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Bluetooth access to connect to nearby devices.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Location access is needed to provide you with location-based services.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
