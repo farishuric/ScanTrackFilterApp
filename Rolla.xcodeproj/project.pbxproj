@@ -24,6 +24,8 @@
 		AF4E40462AADDE560061ED8F /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E40452AADDE560061ED8F /* Double+Extensions.swift */; };
 		AF4E40492AADDE840061ED8F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E40482AADDE840061ED8F /* String+Extensions.swift */; };
 		AFFDDBC95BB98B759B367696 /* Pods_Rolla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9029A6E265F2C185B6214689 /* Pods_Rolla.framework */; };
+		AFFECE1D2AAE0532003FE8B9 /* ScanDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFECE1C2AAE0532003FE8B9 /* ScanDetailsView.swift */; };
+		AFFECE202AAE06F4003FE8B9 /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFECE1F2AAE06F4003FE8B9 /* ScanViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,9 @@
 		AF4E403F2AADDBA20061ED8F /* bluetooth-lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "bluetooth-lottie.json"; sourceTree = "<group>"; };
 		AF4E40452AADDE560061ED8F /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		AF4E40482AADDE840061ED8F /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		AFFECE182AADFE30003FE8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AFFECE1C2AAE0532003FE8B9 /* ScanDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDetailsView.swift; sourceTree = "<group>"; };
+		AFFECE1F2AAE06F4003FE8B9 /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,7 @@
 		AF4E400B2AADC4810061ED8F /* Rolla */ = {
 			isa = PBXGroup;
 			children = (
+				AFFECE182AADFE30003FE8B9 /* Info.plist */,
 				AF4E401E2AADC5590061ED8F /* Common */,
 				AF4E401A2AADC52F0061ED8F /* Modules */,
 				AF4E400C2AADC4810061ED8F /* RollaApp.swift */,
@@ -122,6 +128,8 @@
 		AF4E401B2AADC5350061ED8F /* Scan */ = {
 			isa = PBXGroup;
 			children = (
+				AFFECE1E2AAE06EC003FE8B9 /* ViewModel */,
+				AFFECE192AAE0520003FE8B9 /* ScanDetails */,
 				AF4E40222AADC91E0061ED8F /* ScanView.swift */,
 			);
 			path = Scan;
@@ -213,6 +221,22 @@
 				AF4E40482AADDE840061ED8F /* String+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AFFECE192AAE0520003FE8B9 /* ScanDetails */ = {
+			isa = PBXGroup;
+			children = (
+				AFFECE1C2AAE0532003FE8B9 /* ScanDetailsView.swift */,
+			);
+			path = ScanDetails;
+			sourceTree = "<group>";
+		};
+		AFFECE1E2AAE06EC003FE8B9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFFECE1F2AAE06F4003FE8B9 /* ScanViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CF9C17BB724C5141C6805D9C /* Frameworks */ = {
@@ -344,12 +368,14 @@
 				AF4E40372AADD2380061ED8F /* GPSTrackerManager.swift in Sources */,
 				AF4E402A2AADC98F0061ED8F /* TrackView.swift in Sources */,
 				AF4E40492AADDE840061ED8F /* String+Extensions.swift in Sources */,
+				AFFECE202AAE06F4003FE8B9 /* ScanViewModel.swift in Sources */,
 				AF4E40342AADCDCD0061ED8F /* Spacer.swift in Sources */,
 				AF4E400D2AADC4810061ED8F /* RollaApp.swift in Sources */,
 				AF4E402F2AADCA800061ED8F /* PrimaryButton.swift in Sources */,
 				AF4E403E2AADD8000061ED8F /* LottieView.swift in Sources */,
 				AF4E402C2AADC99A0061ED8F /* FilterView.swift in Sources */,
 				AF4E40462AADDE560061ED8F /* Double+Extensions.swift in Sources */,
+				AFFECE1D2AAE0532003FE8B9 /* ScanDetailsView.swift in Sources */,
 				AF4E40232AADC91E0061ED8F /* ScanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,8 +509,9 @@
 				DEVELOPMENT_TEAM = R8GJC85857;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Bluetooth access to connect to nearby devices.";
-				INFOPLIST_KEY_NSLocationUsageDescription = "Location access is needed to provide you with location-based services.";
+				INFOPLIST_FILE = Rolla/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow Bluetooth access to connect to nearby devices.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location access is needed to provide you with location-based services.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -515,8 +542,9 @@
 				DEVELOPMENT_TEAM = R8GJC85857;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Bluetooth access to connect to nearby devices.";
-				INFOPLIST_KEY_NSLocationUsageDescription = "Location access is needed to provide you with location-based services.";
+				INFOPLIST_FILE = Rolla/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow Bluetooth access to connect to nearby devices.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location access is needed to provide you with location-based services.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

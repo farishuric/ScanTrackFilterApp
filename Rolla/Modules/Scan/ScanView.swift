@@ -8,42 +8,59 @@
 import SwiftUI
 
 struct ScanView: View {
-    @ObservedObject var bluetoothManager = BLEManager()
+    @ObservedObject var scanVM = ScanViewModel()
+    private var isScanning = false
 
     var body: some View {
-        VStack {
-            NavigationView {
-                List(bluetoothManager.discoveredDevices, id: \.self) { device in
-                    Text(device.name ?? "Unnamed Device")
-                }
-                .navigationBarTitle("Bluetooth Devices")
-                .onAppear {
-                    // Start scanning for devices when the view appears
-                    bluetoothManager.connect()
-                }
-                .overlay(Group {
-                    if bluetoothManager.discoveredDevices.isEmpty {
-                        Text("No devices found...")
+        NavigationStack {
+            VStack {
+                VStack {
+                    List(scanVM.discoveredDevices, id: \.self) { device in
+                        NavigationLink {
+                            ScanDetailsView(device: device)
+                        } label: {
+                            Text("Device: \(device.name ?? "Unknown name")")
+                        }
+
+
                     }
-                })
-                
-            }
-            
-            Spacer()
-            
-            VStack {
-                LottieView(animationName: "bluetooth-lottie", loopMode: .loop)
-                    .frame(width: 100, height: 100)
-                    .scaleEffect(0.2)
-            }
-            
-            Spacer()
-            
-            VStack {
-                PrimaryButton(buttonLabel: "Scan", color: .purple) {
-                    bluetoothManager.startScanning()
+                    .navigationBarTitle("Bluetooth Devices")
+                    .onAppear {
+                        // Start scanning for devices when the view appears
+                        scanVM.startConnection()
+                    }
+                    .overlay(Group {
+                        if scanVM.discoveredDevices.isEmpty {
+                            if scanVM.isScanning {
+                                Text("No devices found...")
+                            } else {
+                                Text("Tap Scan to find nearby devices")
+                            }
+                        }
+                    })
+                    
                 }
-                .padding()
+                
+                Spacer()
+                
+                VStack {
+                    LottieView(animationName: "bluetooth-lottie", loopMode: .loop)
+                        .frame(width: 100, height: 100)
+                        .scaleEffect(0.2)
+                }
+                
+                Spacer()
+                
+                VStack {
+                    PrimaryButton(
+                        buttonLabel: isScanning ? "Stop scanning" : "Scan",
+                        color: .purple
+                    ) {
+                        scanVM.isScanning ? scanVM.stopScanning() : scanVM.startScanning()
+                        scanVM.isScanning.toggle()
+                    }
+                    .padding()
+                }
             }
         }
     }
