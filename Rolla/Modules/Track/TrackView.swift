@@ -20,7 +20,7 @@ struct TrackView: View {
                             VStack(alignment: .leading) {
                                 Text("Current speed:")
                                     .font(.system(.title))
-                                Text("\(gpsTracker.currentSpeed.toString()) m/s")
+                                Text("\(gpsTracker.currentSpeed.toString(decimal: 2)) m/s")
                                     .font(.system(.title))
                                     .foregroundColor(.purple)
                             }

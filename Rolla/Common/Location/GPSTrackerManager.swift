@@ -44,13 +44,14 @@ class GPSTrackerManager: NSObject, ObservableObject, CLLocationManagerDelegate {
             if let previousLocation = currentLocation {
                 let distance = location.distance(from: previousLocation)
                 let timeInterval = location.timestamp.timeIntervalSince(previousLocation.timestamp)
-                currentSpeed = distance / timeInterval  // Speed in meters per second
+                currentSpeed = location.speed
+                // Speed in meters per second
                 traveledDistance += distance
             }
         }
     }
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        // Handle location tracking errors here
+        print(error)
     }
 }
