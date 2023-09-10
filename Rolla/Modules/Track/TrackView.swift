@@ -17,12 +17,9 @@ struct TrackView: View {
                 VStack {
                     HStack {
                         VStack(alignment: .leading) {
-                            VStack(alignment: .leading) {
-                                Text("Current speed:")
+                            VStack {
+                                Text("Current speed: \(gpsTracker.currentSpeed)m/s")
                                     .font(.system(.title))
-                                Text("\(gpsTracker.currentSpeed.toString()) m/s")
-                                    .font(.system(.title))
-                                    .foregroundColor(.purple)
                             }
                         }
                         Spacer()
@@ -30,26 +27,15 @@ struct TrackView: View {
                     VSpacer(16)
                     HStack {
                         VStack(alignment: .leading) {
-                            VStack(alignment: .leading) {
-                                Text("Traveled distance:")
+                            VStack {
+                                Text("Traveled Distance: \(gpsTracker.traveledDistance) meters")
                                     .font(.system(.title))
-                                Text("\(gpsTracker.traveledDistance.toString()) meters")
-                                    .font(.system(.title))
-                                    .foregroundColor(.purple)
                             }
                         }
                         Spacer()
                     }
                 }
                 .padding()
-                
-                Spacer()
-                
-                VStack {
-                    LottieView(animationName: "gps-tracker", loopMode: .playOnce)
-                        .frame(width: 100, height: 100)
-                        .scaleEffect(0.4)
-                }
                 
                 Spacer()
                 

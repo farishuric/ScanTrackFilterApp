@@ -18,6 +18,8 @@ struct MainView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
+                .toolbarBackground(Color.yellow, for: .tabBar)
+                .toolbar(.visible, for: .tabBar)
 
             TrackView()
                 .tabItem {
