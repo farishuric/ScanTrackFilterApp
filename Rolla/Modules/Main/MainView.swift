@@ -15,8 +15,10 @@ struct MainView: View {
         TabView {
             ScanView()
                 .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
+                    HStack {
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                    }
                 }
 
             TrackView()
